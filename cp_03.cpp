@@ -1,4 +1,4 @@
-/*C++ Primer µÚÈıÕÂ Ëæ±Ê*/
+/*C++ Primer ç¬¬ä¸‰ç«  éšç¬”*/
 
 #include <string>
 #include <vector>
