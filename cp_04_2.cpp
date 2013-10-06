@@ -20,14 +20,14 @@ int _tmain(int argc, _TCHAR* argv[]){
 		for(const auto col : row)
 			std::cout << col << std::endl;
 
-	/*²âÊÔi++ºÍ++i*/
+	/*åŒºåˆ«i++å’Œ++i*/
 	int i=0, j;
 	j = ++i;
 	std::cout << " i = " << i << "\t" << " j = " << j << std::endl;
 	j = i++;
 	std::cout << " i = " << i << "\t" << " j = " << j << std::endl;
 
-	/*²âÊÔ*iter++*/
+	/*ä½¿ç”¨*iter++*/
 	int t(0);
 	std::vector<int> v;
 	for(unsigned int i=0; i<10; ++i)
