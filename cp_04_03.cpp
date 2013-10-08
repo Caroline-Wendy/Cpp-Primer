@@ -6,7 +6,7 @@ using namespace std;
 
 int _tmain(int argc, _TCHAR* argv[]){
 
-	/*Ìõ¼þ²Ù×÷µÄÓÅÏÈ¼¶½ÏµÍ*/
+	/*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¼ï¿½ï¿½Ïµï¿½*/
 	int grade(40);
 	std::cout << ((grade<60) ? "fail" : "pass") << std::endl;
 	std::cout << (grade<60)  << std::endl;
@@ -17,14 +17,14 @@ int _tmain(int argc, _TCHAR* argv[]){
 	std::cout << "val << 31 = " << (val << 31) << std::endl;
 	std::cout << "~val = " << ~val << std::endl;
 
-	/*²âÊÔÎ»²Ù×÷·û*/
+	/*ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*/
 	unsigned char b1(0145);
 	unsigned char b2(0257);
 	std::cout << "b1&b2 = " << (b1&b2) << std::endl;
 	std::cout << "b1&b2 = " << (b1|b2) << std::endl;
 	std::cout << "b1&b2 = " << (b1^b2) << std::endl;
 
-	/*Î»ÔËËãÀý×Ó*/
+	/*Î»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*/
 	unsigned long quiz1(0);
 	quiz1 |= 1UL<<27;
 	bool status =quiz1 & (1UL<<27);
@@ -43,7 +43,7 @@ int _tmain(int argc, _TCHAR* argv[]){
 	std::cout << "sizeof(char) = " << sizeof(char)  << std::endl;
 	std::cout << "sizeof(a_int) = " << sizeof(ia)  << std::endl;
 
-	/*ÇóÊý×éµÄ´óÐ¡*/
+	/*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä´ï¿½Ð¡*/
 	const size_t sz = sizeof(ia) / sizeof(*ia);
 	int arr2[sz];
 	for(int& t : arr2)
@@ -51,7 +51,7 @@ int _tmain(int argc, _TCHAR* argv[]){
 	for(const int t : arr2)
 		std::cout << t << std::endl;
 
-	/*¶ººÅ²Ù×÷·û*/
+	/*ï¿½ï¿½ï¿½Å²ï¿½ï¿½ï¿½ï¿½ï¿½*/
 	vector<int> ivec(4);
 	int cnt = 4;
 	for(vector<int>::size_type ix=0; ix!=ivec.size(); ++ix, --cnt)
@@ -59,7 +59,7 @@ int _tmain(int argc, _TCHAR* argv[]){
 	for(const int t : ivec)
 		std::cout << t << std::endl;
 
-	/*ÒþÊ½ÀàÐÍ×ª»»*/
+	/*ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½*/
 	int a = -1;
 	unsigned short b = 10;
 	decltype(a+b) c = a+b;
@@ -67,5 +67,6 @@ int _tmain(int argc, _TCHAR* argv[]){
 	std::cout << "3.14+'a' = " << 3.14+'a'  << std::endl;
 
 	return 0;
+	
 }
 
