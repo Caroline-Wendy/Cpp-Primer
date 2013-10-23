@@ -9,7 +9,7 @@ using namespace std;
 
 int main(void) {
 
-	/*vectorµÄÄÚ´æ·ÖÅä*/
+	/*vectorçš„å†…å­˜åˆ†é…*/
 	std::vector<int> ivec;
 	std::cout << "ivec: size: " << ivec.size()
 		<< " capacity: " << ivec.capacity() << std::endl;
