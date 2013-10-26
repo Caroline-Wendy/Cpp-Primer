@@ -13,7 +13,7 @@ using namespace std;
 
 int main(void) {
 
-	/*String&数字类型转换*/
+	/*String数字类型转换*/
 	std::string str_dec = "2001, A Space Odyssey";
 	std::string str_hex = "40c3";
 	std::string str_bin = "-10010110001";
@@ -28,7 +28,7 @@ int main(void) {
 	std::cout << str_bin << ": " << i_bin << '\n';
 	std::cout << str_auto << ": " << i_auto << '\n';
 
-	/*stack & priority_queue的用法*/
+	/*stack和priority_queue的用法*/
 	std::stack<int> intStack;
 	for(size_t ix=0; ix != 10; ix++)
 		intStack.push(ix);
