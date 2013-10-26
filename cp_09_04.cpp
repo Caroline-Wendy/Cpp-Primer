@@ -1,5 +1,6 @@
 /*Programme from C++ Primer, By C.L.Wang*/
 
+#pragma execution_character_set("utf-8")
 #include "stdafx.h"
 
 #include <iostream>
