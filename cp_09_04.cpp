@@ -1,6 +1,5 @@
-/*Programme from C++ Primer, By C.L.Wang*/
+ï»¿/*Programme from C++ Primer, By C.L.Wang*/
 
-#pragma execution_character_set("utf-8")
 #include "stdafx.h"
 
 #include <iostream>
@@ -14,7 +13,7 @@ using namespace std;
 
 int main(void) {
 
-	/*StringÊı×ÖÀàĞÍ×ª»»*/
+	/*Stringæ•°å­—ç±»å‹è½¬æ¢*/
 	std::string str_dec = "2001, A Space Odyssey";
 	std::string str_hex = "40c3";
 	std::string str_bin = "-10010110001";
@@ -29,7 +28,7 @@ int main(void) {
 	std::cout << str_bin << ": " << i_bin << '\n';
 	std::cout << str_auto << ": " << i_auto << '\n';
 
-	/*stackºÍpriority_queueµÄÓÃ·¨*/
+	/*stackå’Œpriority_queueçš„ç”¨æ³•*/
 	std::stack<int> intStack;
 	for(size_t ix=0; ix != 10; ix++)
 		intStack.push(ix);
