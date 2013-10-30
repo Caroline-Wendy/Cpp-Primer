@@ -13,6 +13,10 @@
 
 using namespace std;
 
+bool comp(const int& i, const int& j){
+	return i > j;
+}
+
 int main(void) {
 	
 	/*map[subscript]*/
@@ -44,6 +48,16 @@ int main(void) {
 	std::cout << ivec.size() << std::endl;
 	std::cout << iset.size() << std::endl;
 	std::cout << miset.size() << std::endl;
+
+	/*自定义集合排列顺序*/
+	multiset<int, decltype(comp)*> ims(&comp);
+	for (size_t i=0; i!=10; ++i) {
+		ims.insert(i);
+	}
+	std::cout << " comp(>) : ";
+	for(const auto& i : ims)
+		std::cout << i << " ";
+	std::cout << std::endl;
 
 	return 0;
 
