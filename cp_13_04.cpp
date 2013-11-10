@@ -38,7 +38,16 @@ private:
 	std::string *cap;
 };
 void StrVec::reallocate () {
-
+	auto newcapacity = size() ? 2*size() : 1; //正常2倍, 为空分配一个
+	auto newdata = alloc.allocate(newcapacity);
+	auto dest = newdata;
+	auto elem = elements;
+	for (std::size_t i=0; i!=size(); ++i)
+		alloc.construct(dest++, std::move(*elem++)); //每个元素均移动
+	free();
+	elements = newdata;
+	first_free = dest;
+	cap = elements + newcapacity;
 }
 
 std::allocator<std::string> StrVec::alloc; //需要初始化
@@ -78,6 +87,13 @@ StrVec &StrVec::operator= (const StrVec &rhs)
 	return *this;
 }
 int main (void) {
+	StrVec sv;
+	sv.push_back("Girls");
+	sv.push_back("Ladies");
+	sv.push_back("Women");
+	for(auto it = sv.begin(); it != sv.end(); ++it)
+		std::cout << *it << " ";
+	std::cout << std::endl;
 	return 0;
 }
 
